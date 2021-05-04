@@ -15,5 +15,6 @@ http://www.mulesoft.org/schema/mule/http http://www.mulesoft.org/schema/mule/htt
 		<set-payload value='#["ciao"]' doc:name="Set Payload" doc:id="140dd27f-7fb9-4c05-81df-c948270de113" mimeType="application/json"/>
 		<logger level="INFO" doc:name="Logger" doc:id="72ccf7ff-9530-49b0-a605-dc44a80ae463" />
 		<logger level="INFO" doc:name="LoggerA" doc:id="5811045b-87cb-4701-8bd3-02b0765fc2cd" />
+		<set-payload value='#["ciao"]' doc:name="V_Set Payload" doc:id="730612fd-dcf0-455c-b314-a724fd56b004" mimeType="application/json" />
 	</flow>
 </mule>
