@@ -10,5 +10,6 @@ http://www.mulesoft.org/schema/mule/http http://www.mulesoft.org/schema/mule/htt
 	<flow name="provagit1Flow" doc:id="f49bc889-29a5-485a-b573-459bf163b810" >
 		<http:listener doc:name="Listener" doc:id="d0da70fa-b4ec-4354-be65-d1edea51d273" config-ref="HTTP_Listener_config" path="/a"/>
 		<set-payload value='#["ciao"]' doc:name="Set Payload" doc:id="140dd27f-7fb9-4c05-81df-c948270de113" mimeType="application/json"/>
+		<logger level="INFO" doc:name="Logger" doc:id="72ccf7ff-9530-49b0-a605-dc44a80ae463" />
 	</flow>
 </mule>
