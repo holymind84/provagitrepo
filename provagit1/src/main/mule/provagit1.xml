@@ -17,6 +17,14 @@ http://www.mulesoft.org/schema/mule/http http://www.mulesoft.org/schema/mule/htt
 		<logger level="INFO" doc:name="LoggerA" doc:id="5811045b-87cb-4701-8bd3-02b0765fc2cd" />
 		<set-payload value='#["ciao"]' doc:name="V_Set Payload" doc:id="730612fd-dcf0-455c-b314-a724fd56b004" mimeType="application/json" />
 		<set-payload value="#[payload]" doc:name="Set Payload1" doc:id="64f957c4-b3ae-43d2-b1da-3d5da82303d9" />
+<<<<<<< HEAD
 		<logger level="INFO" doc:name="V_Logger" doc:id="633b35d5-2e83-4ee4-a530-0e161a99cc3f" />
+=======
+		<choice doc:name="Choice" doc:id="70e44bea-e8ba-4857-bc08-fbcb498c62a8" >
+			<when expression="1==1">
+				<set-payload value="#[payload]" doc:name="Set Payload" doc:id="818d422f-79cb-4d47-bce1-49f049d9b205" />
+			</when>
+		</choice>
+>>>>>>> branch 'main' of https://github.com/holymind84/provagitrepo/
 	</flow>
 </mule>
