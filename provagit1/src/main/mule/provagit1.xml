@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<mule xmlns:http="http://www.mulesoft.org/schema/mule/http" xmlns="http://www.mulesoft.org/schema/mule/core"
+	xmlns:doc="http://www.mulesoft.org/schema/mule/documentation"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.mulesoft.org/schema/mule/core http://www.mulesoft.org/schema/mule/core/current/mule.xsd
+http://www.mulesoft.org/schema/mule/http http://www.mulesoft.org/schema/mule/http/current/mule-http.xsd">
+	<http:listener-config name="HTTP_Listener_config" doc:name="HTTP Listener config" doc:id="84407d28-7ba6-41bd-9be0-47f135462e92" >
+		<http:listener-connection host="0.0.0.0" port="8081" />
+	</http:listener-config>
+	<flow name="provagit1Flow" doc:id="f49bc889-29a5-485a-b573-459bf163b810" >
+		<http:listener doc:name="Listener" doc:id="d0da70fa-b4ec-4354-be65-d1edea51d273" config-ref="HTTP_Listener_config" path="/a"/>
+		<set-payload value='#["ciao"]' doc:name="Set Payload" doc:id="140dd27f-7fb9-4c05-81df-c948270de113" mimeType="application/json"/>
+	</flow>
+</mule>
